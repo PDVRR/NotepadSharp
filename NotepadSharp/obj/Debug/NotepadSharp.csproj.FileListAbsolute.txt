@@ -1,0 +1,13 @@
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\bin\Debug\NotepadSharp.exe.config
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\bin\Debug\NotepadSharp.exe
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\bin\Debug\NotepadSharp.pdb
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\obj\Debug\NotepadSharp.csprojAssemblyReference.cache
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\obj\Debug\NotepadSharp.MainForm.resources
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\obj\Debug\NotepadSharp.Properties.Resources.resources
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\obj\Debug\NotepadSharp.csproj.GenerateResource.cache
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\obj\Debug\NotepadSharp.csproj.CoreCompileInputs.cache
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\obj\Debug\NotepadSharp.exe
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\obj\Debug\NotepadSharp.pdb
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\bin\Debug\NotepadSharpBusinessLogic.dll
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\bin\Debug\NotepadSharpBusinessLogic.pdb
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\obj\Debug\NotepadSharp.csproj.CopyComplete

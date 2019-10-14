@@ -1,0 +1,6 @@
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharpBusinessLogic\bin\Debug\NotepadSharpBusinessLogic.dll
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharpBusinessLogic\bin\Debug\NotepadSharpBusinessLogic.pdb
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharpBusinessLogic\obj\Debug\NotepadSharpBusinessLogic.csprojAssemblyReference.cache
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharpBusinessLogic\obj\Debug\NotepadSharpBusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharpBusinessLogic\obj\Debug\NotepadSharpBusinessLogic.dll
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharpBusinessLogic\obj\Debug\NotepadSharpBusinessLogic.pdb
