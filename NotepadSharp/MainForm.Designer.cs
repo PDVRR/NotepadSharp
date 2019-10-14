@@ -30,21 +30,31 @@
         {
             this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newFileMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsFileMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.textContentFld = new System.Windows.Forms.TextBox();
             this.symbolCountLbl = new System.Windows.Forms.Label();
-            this.newFileMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.linesCountLbl = new System.Windows.Forms.Label();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.worldWrapMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cutMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainMenuStrip
             // 
             this.mainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.formatToolStripMenuItem});
             this.mainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.mainMenuStrip.Name = "mainMenuStrip";
             this.mainMenuStrip.Size = new System.Drawing.Size(968, 24);
@@ -58,10 +68,18 @@
             this.openFileMenuBtn,
             this.saveFileMenuBtn,
             this.saveAsFileMenuBtn,
+            this.toolStripSeparator1,
             this.exitMenuBtn});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // newFileMenuBtn
+            // 
+            this.newFileMenuBtn.Name = "newFileMenuBtn";
+            this.newFileMenuBtn.Size = new System.Drawing.Size(180, 22);
+            this.newFileMenuBtn.Text = "New";
+            this.newFileMenuBtn.Click += new System.EventHandler(this.newFileMenuBtn_Click);
             // 
             // openFileMenuBtn
             // 
@@ -85,11 +103,19 @@
             this.saveAsFileMenuBtn.Text = "Save as";
             this.saveAsFileMenuBtn.Click += new System.EventHandler(this.saveAsFileMenuBtn_Click);
             // 
+            // exitMenuBtn
+            // 
+            this.exitMenuBtn.Name = "exitMenuBtn";
+            this.exitMenuBtn.Size = new System.Drawing.Size(180, 22);
+            this.exitMenuBtn.Text = "Exit";
+            this.exitMenuBtn.Click += new System.EventHandler(this.exitMenuBtn_Click);
+            // 
             // textContentFld
             // 
             this.textContentFld.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textContentFld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textContentFld.Location = new System.Drawing.Point(12, 27);
             this.textContentFld.Multiline = true;
             this.textContentFld.Name = "textContentFld";
@@ -108,20 +134,6 @@
             this.symbolCountLbl.TabIndex = 2;
             this.symbolCountLbl.Text = "Symbol count:";
             // 
-            // newFileMenuBtn
-            // 
-            this.newFileMenuBtn.Name = "newFileMenuBtn";
-            this.newFileMenuBtn.Size = new System.Drawing.Size(180, 22);
-            this.newFileMenuBtn.Text = "New";
-            this.newFileMenuBtn.Click += new System.EventHandler(this.newFileMenuBtn_Click);
-            // 
-            // exitMenuBtn
-            // 
-            this.exitMenuBtn.Name = "exitMenuBtn";
-            this.exitMenuBtn.Size = new System.Drawing.Size(180, 22);
-            this.exitMenuBtn.Text = "Exit";
-            this.exitMenuBtn.Click += new System.EventHandler(this.exitMenuBtn_Click);
-            // 
             // linesCountLbl
             // 
             this.linesCountLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -131,6 +143,67 @@
             this.linesCountLbl.Size = new System.Drawing.Size(74, 13);
             this.linesCountLbl.TabIndex = 3;
             this.linesCountLbl.Text = "Lines count: 1";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // formatToolStripMenuItem
+            // 
+            this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.worldWrapMenuBtn});
+            this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
+            this.formatToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.formatToolStripMenuItem.Text = "Format";
+            // 
+            // worldWrapMenuBtn
+            // 
+            this.worldWrapMenuBtn.Checked = true;
+            this.worldWrapMenuBtn.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.worldWrapMenuBtn.Name = "worldWrapMenuBtn";
+            this.worldWrapMenuBtn.Size = new System.Drawing.Size(180, 22);
+            this.worldWrapMenuBtn.Text = "Word Wrap";
+            this.worldWrapMenuBtn.Click += new System.EventHandler(this.worldWrapMenuBtn_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cutMenuBtn,
+            this.copyMenuBtn,
+            this.pasteMenuBtn,
+            this.deleteMenuBtn});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // cutMenuBtn
+            // 
+            this.cutMenuBtn.Name = "cutMenuBtn";
+            this.cutMenuBtn.Size = new System.Drawing.Size(180, 22);
+            this.cutMenuBtn.Text = "Cut";
+            this.cutMenuBtn.Click += new System.EventHandler(this.cutMenuBtn_Click);
+            // 
+            // copyMenuBtn
+            // 
+            this.copyMenuBtn.Name = "copyMenuBtn";
+            this.copyMenuBtn.Size = new System.Drawing.Size(180, 22);
+            this.copyMenuBtn.Text = "Copy";
+            this.copyMenuBtn.Click += new System.EventHandler(this.copyMenuBtn_Click);
+            // 
+            // pasteMenuBtn
+            // 
+            this.pasteMenuBtn.Name = "pasteMenuBtn";
+            this.pasteMenuBtn.Size = new System.Drawing.Size(180, 22);
+            this.pasteMenuBtn.Text = "Paste";
+            this.pasteMenuBtn.Click += new System.EventHandler(this.pasteMenuBtn_Click);
+            // 
+            // deleteMenuBtn
+            // 
+            this.deleteMenuBtn.Name = "deleteMenuBtn";
+            this.deleteMenuBtn.Size = new System.Drawing.Size(180, 22);
+            this.deleteMenuBtn.Text = "Delete";
+            this.deleteMenuBtn.Click += new System.EventHandler(this.deleteMenuBtn_Click);
             // 
             // MainForm
             // 
@@ -165,6 +238,14 @@
         private System.Windows.Forms.ToolStripMenuItem newFileMenuBtn;
         private System.Windows.Forms.ToolStripMenuItem exitMenuBtn;
         private System.Windows.Forms.Label linesCountLbl;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem formatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem worldWrapMenuBtn;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cutMenuBtn;
+        private System.Windows.Forms.ToolStripMenuItem copyMenuBtn;
+        private System.Windows.Forms.ToolStripMenuItem pasteMenuBtn;
+        private System.Windows.Forms.ToolStripMenuItem deleteMenuBtn;
     }
 }
 
