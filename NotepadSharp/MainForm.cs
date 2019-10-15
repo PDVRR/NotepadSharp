@@ -63,7 +63,7 @@ namespace NotepadSharp
 
         public void SetSymbolCount(int count)
         {
-            symbolCountLbl.Text = "Symbol count: " + count;
+            symbolCountLbl.Text =  count.ToString();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -93,7 +93,7 @@ namespace NotepadSharp
 
         private void textContentFld_TextChanged(object sender, EventArgs e)
         {
-            linesCountLbl.Text = "Lines count: " + textContentFld.Lines.Length;
+            linesCountLbl.Text = textContentFld.Lines.Length.ToString();
             ContentChanged?.Invoke(sender, EventArgs.Empty);
         }
 
