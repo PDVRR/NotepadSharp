@@ -68,7 +68,6 @@ namespace NotepadSharp
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
         }
 
         private void openFileMenuBtn_Click(object sender, EventArgs e)
@@ -204,6 +203,26 @@ namespace NotepadSharp
             cutMenuBtn.Enabled = textContentFld.SelectionLength > 0;
             deleteMenuBtn.Enabled = textContentFld.SelectionLength > 0;
             pasteMenuBtn.Enabled = Clipboard.GetText() != String.Empty;
+        }
+
+        private void statusBarMenuBtn_Click(object sender, EventArgs e)
+        {
+            statusBarMenuBtn.Checked = !statusBarMenuBtn.Checked;
+            statusStrip.Visible = statusBarMenuBtn.Checked;
+            if (statusBarMenuBtn.Checked)
+            {
+                textContentFld.Size = new Size(textContentFld.Size.Width, textContentFld.Size.Height - 25);
+            }
+            else
+            {
+                textContentFld.Size = new Size(textContentFld.Size.Width, textContentFld.Size.Height + 25);
+            }
+        }
+
+        private void fontMenuBtn_Click(object sender, EventArgs e)
+        {
+            FontSettingsForm fontSettingsForm = new FontSettingsForm(textContentFld);
+            fontSettingsForm.Show();
         }
     }
 }

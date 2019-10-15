@@ -11,3 +11,4 @@ C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\obj\Debug\NotepadSharp.p
 C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\bin\Debug\NotepadSharpBusinessLogic.dll
 C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\bin\Debug\NotepadSharpBusinessLogic.pdb
 C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\obj\Debug\NotepadSharp.csproj.CopyComplete
+C:\Users\Tr1oniX\source\repos\NotepadSharp\NotepadSharp\obj\Debug\NotepadSharp.FontSettingsForm.resources
